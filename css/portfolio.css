@@ -22,8 +22,8 @@ body{
 }
 
 .navbar-custom .navbar-nav .nav-link:hover{
-    background-color:#d8d8d8;
-	color:#2a2a2a;
+    background-color:#4b006e;
+	color:#d8d8d8;
 	box-shadow: 0px 0px 10px 10px #2a2a2a;
 }
 
@@ -51,4 +51,46 @@ body{
 	margin:0px 5px;
 	border:none;
 	background-color:#2a2a2a;
+}
+
+/*.container .row-custom{
+	margin-top: 30px;
+}*/
+
+.container .row-hr .col .new1{
+	height: 1px;
+	color: #4b006e;
+	background-color: #4b006e;
+	border: none;
+}
+
+.container .row-hr{
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+
+#profpic{
+	margin-top: 30px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+#aboutmetext{
+	margin-top: 30px;
+}
+
+#approachtext{
+	margin-top:10px;
+}
+
+#satisfaction{
+	border-radius: 10px;
+	display: block;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	width: 50%;
+	max-width:70%;
+	height:auto;
 }
