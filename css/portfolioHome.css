@@ -7,8 +7,6 @@ html, body{
 
 body{
 	padding-top:58px;
-	/*padding-left:15%;
-	padding-right:15%;*/
 	background-color:#dfdede;
 	color:#555;
 	font-family:Arial, Helvetica, sans-serif;
@@ -185,8 +183,8 @@ body{
 #card3 .card-img .overlay .overlay-content .hovertext{
 	position: absolute;
 	top: 7rem;
-	left: 3rem;
-	right: 3rem;
+	left: 3.5rem;
+	right: 3.5rem;
 	bottom: 7rem;
 }
 
@@ -238,8 +236,6 @@ body{
 
 .navbar-custom .nav-item{
 	margin:0px 5px;
-    /*background-color:#d8d8d8;
-	color:#2a2a2a;*/
 }
 
 .navbar-custom .navbar-nav .nav-link:hover{
@@ -274,30 +270,9 @@ body{
 	background-color:#2a2a2a;
 }
 
-.container-cards{
-	/*padding-left:16.5%;
-	padding-right:16.5%;*/
-}
-
-/*.container .row-custom{
-	margin-top: 30px;
-}*/
-
-#introcontainer{
-	/*padding-left: 15%;
-	padding-right: 15%;*/
-}
-
-#introcontainer .row-hr .col .new1{
-	height: 1px;
-	color: #4b006e;
-	background-color: #4b006e;
-	border: none;
-}
-
-#introcontainer .row-hr{
-	margin-top: 0px;
-	margin-bottom:0px;
+#welcomemsg{
+	text-align:center;
+	margin-top: 2%;
 }
 
 #footercontainer{
@@ -308,62 +283,4 @@ body{
 
 .footer-copyright{
 	background-color: #2a2a2a;
-}
-
-#profpic{
-	margin-top: 5%;
-	border-radius: 50%;
-	vertical-align: middle;
-}
-
-#aboutmetext{
-	margin-top: 3%;
-	color: #2a2a2a;
-}
-
-#approachtext{
-	margin-top:10px;
-	color: #2a2a2a;
-}
-
-#satisfaction{
-	border-radius: 10px;
-	display: block;
-	margin-top: 30px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50px;
-	width: 50%;
-	max-width:70%;
-	height:auto;
-}
-
-#welcomemsg{
-	text-align:center;
-	margin-top: 2%;
-}
-
-#linkedinpic{
-	height: 50px;
-	width: 50px;
-}
-
-#instagrampic{
-	height: 50px;
-	width: 50px;
-}
-
-#emailpic, #emailpica{
-	height: 50px;
-	width: 50px;
-}
-
-#contactmsg{
-	text-align: center;
-	margin-top: 5%;
-	font-size: 2rem;
-	font-weight: 200;
-	text-shadow: 0 0.5px 1px #37034e;
-	color: #2a2a2a;
-	line-height: 1.1;
 }

@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+		<link rel="stylesheet" type="text/css" href="css/portfolioContact.css">
 		<title>Contact - Róbert Sánta</title>
 	</head>
 	<body>
@@ -30,29 +30,41 @@
 				</div>
 		</nav>
 		
-		<p id="contactmsg">Want to exchange emails about a professional matter? Perhaps just a chat? Maybe trade opinions on (a part of) UX and/or the industry? Or something else?
-		<br>Let's get in touch! Here is a list of platforms you can reach me on, or add me:</p>
+		<div class="container-fluid" id="contacttext">
+			<p id="contactmsg">Want to exchange emails about a professional matter? Perhaps just a chat? Maybe trade opinions on (a part of) UX and/or the industry? Or something else?
+			<br>Let's get in touch! Here is a list of platforms you can reach me on, or add me:</p>
+		</div>
 
-		 <div class="container-fluid" id="container-socials">
-			 <div class="row row-linkedin">
-				<div class="col col-linkedin">
-					<a href="https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/"><img src="images/linkedin.svg" alt="LinkedIn" id="linkedinpic"></a>
-					<a href="https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/" id="linkedintext">https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/</a>
+		<div class="container-fluid" id="socialscontainer">
+			<div class="row align-items-center justify-content-center" id="linkedinrow">
+				<div class="col align-self-center" id="linkedinpiccol">
+					<a id="linkedinpica" href="https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/"><img src="images/linkedin.svg" alt="LinkedIn" id="linkedinpic"></a>
+				</div>
+				<div class="col align-self-center" id="linkedintextcol">
+					<a id="linkedintext" href="https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/">https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/</a>
 				</div>
 			</div>
-			<div class="row row-instagram">
-				<div class="col col-instagram">
-					<a href="https://www.instagram.com/sanrobi15/"><img src="images/instagram.svg" alt="Instagram" id="instagrampic"></a>
-					<a href="https://www.instagram.com/sanrobi15/" id="instagramtext">https://www.instagram.com/sanrobi15/</a>
+
+			<div class="row align-items-center justify-content-center" id="instagramrow">
+				<div class="col align-self-center" id="instagrampiccol">
+					<a id="instagrampica" href="https://www.instagram.com/sanrobi15/"><img src="images/instagram.svg" alt="Instagram" id="instagrampic"></a>
+				</div>
+				<div class="col align-self-center" id="instagramtextcol">
+					<a id="instagramtext" href="https://www.instagram.com/sanrobi15/">https://www.instagram.com/sanrobi15/</a>
 				</div>
 			</div>
-			<div class="row row-email">
-				<div class="col col-email">
-					<img src="images/email.svg" alt="Email" id="emailpic">
-					<a id="emailtext">sanrobi15@gmail.com</a>
+
+			<div class="row align-items-center justify-content-center" id="emailrow">
+				<div class="col align-self-center" id="emailpiccol">
+					<a id="emailpica"><img src="images/email.svg" alt="Email" id="emailpic"></a>
+				</div>
+				<div class="col align-self-center" id="emailtextcol">
+					<a id="emailtext" >sanrobi15@gmail.com</a>
 				</div>
 			</div>
-		 </div>
+		</div>
+
+		 
 		
 		<footer class="page-footer fixed-bottom">
 			<div class="footer-copyright text-center py-3">© 2020 Copyright:
