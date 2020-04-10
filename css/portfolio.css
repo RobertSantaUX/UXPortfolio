@@ -1,6 +1,8 @@
 html, body{
 	height: 100%;
 	width: 100%;
+	padding-left:8.5%;
+	padding-right:8.5%;
 }
 
 body{
@@ -58,7 +60,7 @@ body{
 }
 
 .row-cards{
-	padding-top:10%;
+	margin-top: 5%;
 }
 
 .card {
@@ -273,8 +275,8 @@ body{
 }
 
 .container-cards{
-	padding-left:16.5%;
-	padding-right:16.5%;
+	/*padding-left:16.5%;
+	padding-right:16.5%;*/
 }
 
 /*.container .row-custom{
@@ -282,8 +284,8 @@ body{
 }*/
 
 #introcontainer{
-	padding-left: 15%;
-	padding-right: 15%;
+	/*padding-left: 15%;
+	padding-right: 15%;*/
 }
 
 #introcontainer .row-hr .col .new1{
@@ -315,7 +317,7 @@ body{
 }
 
 #aboutmetext{
-	margin-top: 4%;
+	margin-top: 3%;
 }
 
 #approachtext{
@@ -336,4 +338,30 @@ body{
 
 #welcomemsg{
 	text-align:center;
+	margin-top: 2%;
+}
+
+#linkedinpic{
+	height: 50px;
+	width: 50px;
+}
+
+#instagrampic{
+	height: 50px;
+	width: 50px;
+}
+
+#emailpic{
+	height: 50px;
+	width: 50px;
+}
+
+#contactmsg{
+	text-align: center;
+	margin-top: 5%;
+	font-size: 2rem;
+	font-weight: 200;
+	text-shadow: 0 0.5px 1px #37034e;
+	color: #2a2a2a;
+	line-height: 1.1;
 }
