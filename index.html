@@ -32,19 +32,19 @@
 		
 		<h1 id="welcomemsg">Welcome to my page!</h1>		
 		
-		<div class="container container-cards">
+		<div class="container-fluid container-cards">
 			<div class="row align-items-end row-cards">
 				<div class="col col-card1">
 					<div class="card" id="card1">
 						<div class="card-img" style="background-image:url(images/intro.jpg);">
 							<div class="overlay">
 								<div class="overlay-content">
-									<a href="introduction.html">My story</a>
+									<a class="hovertext" href="introduction.html">My story</a>
 								</div>
 							</div>
 						</div>
 						<div class="card-content">
-							<a href="#!">
+							<a class="contenttext">
 								<h2>About me</h2>
 							</a>
 						</div>
@@ -56,13 +56,13 @@
 						<div class="card-img" style="background-image:url(images/projects.jpeg);">
 							<div class="overlay">
 								<div class="overlay-content">
-									<a href="project1.html">Project 1</a>
-									<a href="project1.html">Project 2</a>
+									<a class="hovertext1" href="project1.html">Project 1</a>
+									<a class="hovertext2" href="project1.html">Project 2</a>
 								</div>
 							</div>
 						</div>
 						<div class="card-content">
-							<a href="#!">
+							<a class="contenttext">
 								<h2>My projects</h2>
 							</a>
 						</div>
@@ -74,12 +74,12 @@
 						<div class="card-img" style="background-image:url(images/contact.png);">
 							<div class="overlay">
 								<div class="overlay-content">
-									<a href="contact.html">Get in touch!</a>
+									<a class="hovertext" href="contact.html">Get in touch!</a>
 								</div>
 							</div>
 						</div>
 						<div class="card-content">
-							<a href="#!">
+							<a class="contenttext">
 								<h2>Contact</h2>
 							</a>
 						</div>
@@ -88,11 +88,13 @@
 			</div>
 		</div>
 		
-		<footer class="page-footer fixed-bottom">
-			<div class="footer-copyright text-center py-3">© 2020 Copyright:
-				<a href="index.html"> Róbert Sánta</a>
-			</div>
-		</footer>
+		<div class="container" id="footercontainer">
+			<footer class="page-footer fixed-bottom">
+				<div class="footer-copyright text-center py-3">© 2020 Copyright:
+					<a href="index.html"> Róbert Sánta</a>
+				</div>
+			</footer>
+		</div>
 		
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
