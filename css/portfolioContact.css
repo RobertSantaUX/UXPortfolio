@@ -124,7 +124,7 @@ body{
     display: none;
 }
 
-#linkedinpica:hover + #linkedintext{
+#linkedintextcol:hover #linkedintext{
     display: block;
 }
 
