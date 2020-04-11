@@ -70,88 +70,95 @@ body{
 	line-height: 1.1;
 }
 
-#socialscontainer{
-    margin-top: 8%;
+.container-socials .row-contactcard .col-contactcard .card{
+    height: 30rem;
+    width: 22rem;
+    margin: 0 auto;
+    margin-top: 3%;
+    float: none;
+    margin-bottom: 10px;
+    background-color: #4b006e;
+    border-radius: 7px;
+    box-shadow: 0px 2px 4px 3px #2a2a2a;
 }
 
-#linkedinrow, #emailrow, #instagramrow{
-    padding-top: 0.3%;
-    padding-bottom: 0.3%;
-    padding-left: 0.5%;
-    margin-top: 2%;
-    margin-left: 30%;
-    margin-right: 15%;
-    transition: .4s;
+.container-socials .row-contactcard .col-contactcard .card .profilepic{
+    height: 47%;
+    width: 47%;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 3%;
 }
 
-#linkedinpiccol, #instagrampiccol, #emailpiccol{
-    margin-left: -5%;
+.container-socials .row-contactcard .col-contactcard .card .btn-socials{
+    border: 2px solid #c3c3c3;
+    color: #c3c3c3;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 10%;
+    width: 40%;
+    border-radius: 15%;
 }
 
-#linkedintextcol, #instagramtextcol, #emailtextcol{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-left: 4%;
-    padding-left: 2%;
+.container-socials .row-contactcard .col-contactcard .card .btn-socials:hover{
+    border: 2px solid #c3c3c3;
+    background-color: #c3c3c3;
+    color: #4b006e;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 10%;
+    width: 40%;
+    border-radius: 15%;
 }
 
-#linkedintextcol{
-    margin-right: 14%;
-}
-
-#instagramtextcol{
-    margin-right: 31%;
-}
-
-#emailtextcol{
-    margin-right: 39%;
-}
-
-#instagrampic, #linkedinpic, #emailpic{
-    height: 50px;
-    width: 50px;
-    opacity: 1;
-}
-
-#instagrampica, #linkedinpica, #emailpica{
-    margin-left: 80%;
-    opacity: 1;
-}
-
-#emailpic, #emailpica{
-    height: 50px;
-    width: 50px;
-    margin-left: 40%;
-    opacity: 1;
-}
-
-#linkedintext, #instagramtext, #emailtext{
-    opacity: 0;
-    transition: 2;
-    text-decoration: none;
-    color: #dfdede;
+.container-socials .row-contactcard .col-contactcard .card .card-body{
     display: none;
 }
 
-#linkedintext:hover,
-#instagramtext:hover{
-    color: #4b006e;
-}
-
-#linkedinrow:hover #linkedintext,
-#instagramrow:hover #instagramtext,
-#emailrow:hover #emailtext{
+.container-socials .row-contactcard .col-contactcard .card .btn-socials:active + .container-socials .row-contactcard .col-contactcard .card .card-body{
     display: block;
-    opacity: 1;
 }
 
-#linkedinrow:hover,
-#instagramrow:hover,
-#emailrow:hover{
-    background-color: rgba(42, 42, 42, .45);
-    border: 1px solid rgba(42, 42, 42, .45);
-    border-radius: 10px;
-    opacity: 1;
+#linkdainpicaid, #linkedinpic, #instagrampicaid, #instagrampic, #emailpic{
+    height: 40px;
+    width: 40px;
+}
+
+.container-socials .row-contactcard .col-contactcard .card .card-body .linkedin,
+.container-socials .row-contactcard .col-contactcard .card .card-body .instagram,
+.container-socials .row-contactcard .col-contactcard .card .card-body .email{
+    border-top: 2px inset rgba(42, 42, 42, .40);
+    padding-top: 2px;
+}
+
+.container-socials .row-contactcard .col-contactcard .card .card-body .linkedin .linkedintext,
+.container-socials .row-contactcard .col-contactcard .card .card-body .instagram .instagramtext,
+.container-socials .row-contactcard .col-contactcard .card .card-body .email .emailtext{
+    text-decoration: none;
+    color: #c3c3c3;
+    padding-left: 3%;
+}
+
+.container-socials .row-contactcard .col-contactcard .card .card-body .linkedin .linkedintext:hover,
+.container-socials .row-contactcard .col-contactcard .card .card-body .instagram .instagramtext:hover,
+.container-socials .row-contactcard .col-contactcard .card .card-body .email .emailtext:hover{
+    color: white;
+}
+
+.container-socials .row-contactcard .col-contactcard .card .card-body .linkedin{
+    margin-bottom: 3px;
+}
+
+.container-socials .row-contactcard .col-contactcard .card .card-body .instagram{
+    margin: 3px 0;
+}
+
+.container-socials .row-contactcard .col-contactcard .card .card-body .email{
+    padding-top: 0;
+    margin-top: 0;
+    border-bottom: 2px inset rgba(42, 42, 42, .99);
 }
 
 #footercontainer{

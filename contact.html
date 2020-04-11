@@ -35,36 +35,32 @@
 			<br>Let's get in touch! Here is a list of platforms you can reach me on, or add me:</p>
 		</div>
 
-		<div class="container-fluid" id="socialscontainer">
-			<div class="row align-items-center justify-content-center" id="linkedinrow">
-				<div class="col-1 align-self-center" id="linkedinpiccol">
-					<a href="https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/" id="linkedinpica"><img src="images/linkedin.svg" alt="LinkedIn" id="linkedinpic"></a>
-				</div>
-				<div class="col align-self-center" id="linkedintextcol">
-					<a id="linkedintext" href="https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/">https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/</a>
-				</div>
-			</div>
+		<div class="container-fluid container-socials" id="socialscontainer">
+			<div class="row align-items-center row-contactcard">
+				<div class="col align-self-center col-contactcard">
+					<div class="card">
+						<img class="profilepic" src="images/profile.jpg" alt="Róbert Sánta">
+						<button type="button" class="btn btn-socials" id="socialsbtn">Contact Me</button>
+						<div class="card-body" id="cardbody">
+							<div class="linkedin">
+								<a class="linkedinpica" id="linkedinpicaid" href="https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/"><img src="images/linkedin.svg" id="linkedinpic"></a>
+								<a class="linkedintext" href="https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/">LinkedIn</a>
+							</div>
 
-			<div class="row align-items-center justify-content-center" id="instagramrow">
-				<div class="col-1 align-self-center" id="instagrampiccol">
-					<a id="instagrampica" href="https://www.instagram.com/sanrobi15/"><img src="images/instagram.svg" alt="Instagram" id="instagrampic"></a>
-				</div>
-				<div class="col align-self-center" id="instagramtextcol">
-					<a id="instagramtext" href="https://www.instagram.com/sanrobi15/">https://www.instagram.com/sanrobi15/</a>
-				</div>
-			</div>
+							<div class="instagram">
+								<a class="instagrampica" id="instagrampicaid" href="https://www.instagram.com/sanrobi15/"><img src="images/instagram.svg" id="instagrampic"></a>
+								<a class="instagramtext" href="https://www.instagram.com/sanrobi15/">Instagram</a>
+							</div>
 
-			<div class="row align-items-center justify-content-center" id="emailrow">
-				<div class="col-1 align-self-center" id="emailpiccol">
-					<a id="emailpica"><img src="images/email.svg" alt="Email" id="emailpic"></a>
-				</div>
-				<div class="col align-self-center" id="emailtextcol">
-					<a id="emailtext" >sanrobi15@gmail.com</a>
+							<div class="email">
+								<img src="images/email.svg" id="emailpic">
+								<span class="emailtext">sanrobi15@gmail.com</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		 
 		
 		<footer class="page-footer fixed-bottom">
 			<div class="footer-copyright text-center py-3">© 2020 Copyright:
@@ -75,5 +71,19 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function () {
+				$(socialsbtn).click(function (){
+					if (document.getElementById("cardbody").style.display == "block") {
+						document.getElementById("cardbody").style.display = "none";
+						console.log("BELSO FUGGVENY");
+					} else {
+						document.getElementById("cardbody").style.display = "block";
+						console.log("BELSO FUGGVENY");
+					}
+				})
+				console.log('HALLO HALLO');
+			});
+		</script>
 	</body>
 </html>
