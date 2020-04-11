@@ -71,38 +71,61 @@ body{
 }
 
 #socialscontainer{
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 #linkedinrow, #emailrow, #instagramrow{
-    border: 1px solid red;
     margin-top: 2%;
+}
+
+#linkedinpiccol, #instagrampiccol, #emailpiccol{
+    border: 1px solid orange;
+    margin-left: 35.5%;
 }
 
 #linkedintextcol, #instagramtextcol, #emailtextcol{
     border: 1px solid green;
     padding-top: 1%;
     padding-bottom: 1%;
+    margin-left: 1%;
+    padding-left: 2%;
 }
 
-#linkedinpic, #linkedinpica, #instagrampic, #instagrampica{
+#linkedintextcol{
+    margin-right: 14%;
+}
+
+#instagramtextcol{
+    margin-right: 31%;
+}
+
+#emailtextcol{
+    margin-right: 39%;
+}
+
+#instagrampic, #linkedinpic, #emailpic{
     height: 50px;
     width: 50px;
-    margin-left: 40%;
-}
-/*
-#linkedintext, #instagramtext, #emailtext{
-    display: none;
+    border: 1px solid red;
 }
 
-#linkedinpica:hover, #instagrampica:hover, #emailpica:hover + #linkedin{
-    display: block;
+#instagrampica, #linkedinpica, #emailpica{
+    margin-left: 80%;
+    border: 1px solid blue; 
 }
-*/
+
 #emailpic, #emailpica{
     height: 50px;
     width: 50px;
     margin-left: 40%;
+}
+
+#linkedintext{
+    display: none;
+}
+
+#linkedinpica:hover + #linkedintext{
+    display: block;
 }
 
 #footercontainer{
