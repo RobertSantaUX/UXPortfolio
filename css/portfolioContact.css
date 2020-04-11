@@ -75,19 +75,23 @@ body{
 }
 
 #linkedinrow, #emailrow, #instagramrow{
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    padding-left: 0.5%;
     margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 15%;
+    transition: .4s;
 }
 
 #linkedinpiccol, #instagrampiccol, #emailpiccol{
-    border: 1px solid orange;
-    margin-left: 35.5%;
+    margin-left: -5%;
 }
 
 #linkedintextcol, #instagramtextcol, #emailtextcol{
-    border: 1px solid green;
     padding-top: 1%;
     padding-bottom: 1%;
-    margin-left: 1%;
+    margin-left: 4%;
     padding-left: 2%;
 }
 
@@ -106,26 +110,48 @@ body{
 #instagrampic, #linkedinpic, #emailpic{
     height: 50px;
     width: 50px;
-    border: 1px solid red;
+    opacity: 1;
 }
 
 #instagrampica, #linkedinpica, #emailpica{
     margin-left: 80%;
-    border: 1px solid blue; 
+    opacity: 1;
 }
 
 #emailpic, #emailpica{
     height: 50px;
     width: 50px;
     margin-left: 40%;
+    opacity: 1;
 }
 
-#linkedintext{
+#linkedintext, #instagramtext, #emailtext{
+    opacity: 0;
+    transition: 2;
+    text-decoration: none;
+    color: #dfdede;
     display: none;
 }
 
-#linkedintextcol:hover #linkedintext{
+#linkedintext:hover,
+#instagramtext:hover{
+    color: #4b006e;
+}
+
+#linkedinrow:hover #linkedintext,
+#instagramrow:hover #instagramtext,
+#emailrow:hover #emailtext{
     display: block;
+    opacity: 1;
+}
+
+#linkedinrow:hover,
+#instagramrow:hover,
+#emailrow:hover{
+    background-color: rgba(42, 42, 42, .45);
+    border: 1px solid rgba(42, 42, 42, .45);
+    border-radius: 10px;
+    opacity: 1;
 }
 
 #footercontainer{
