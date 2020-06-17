@@ -221,7 +221,7 @@ body{
 	text-decoration: none;
 	font-size: 1rem;
 	font-weight: 550;
-	color: #b1f7fd;
+	color: #fff;
 }
 
 .navbar-custom{
@@ -258,7 +258,6 @@ body{
 
 .navbar-custom .dropdown-item:hover,
 .navbar-custom .dropdown-item:focus{
-	font-weight:bold;
     color:#4b006e;
     background-color:#c3c3c3;
 	
@@ -270,9 +269,21 @@ body{
 	background-color:#2a2a2a;
 }
 
-#welcomemsg{
+#welcomemsg1{
 	text-align:center;
 	margin-top: 2%;
+	color: #2a2a2a;
+}
+
+#welcomemsg2{
+	text-align:center;
+	margin-top: 1%;
+	color: #2a2a2a;
+}
+
+#welcomemsg3{
+	text-align:center;
+	margin-top: 0;
 	color: #2a2a2a;
 }
 

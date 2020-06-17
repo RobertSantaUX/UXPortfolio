@@ -49,7 +49,6 @@ body{
 
 .navbar-custom .dropdown-item:hover,
 .navbar-custom .dropdown-item:focus{
-	font-weight:bold;
     color:#4b006e;
     background-color:#c3c3c3;
 	
