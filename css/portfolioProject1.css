@@ -89,7 +89,54 @@ body{
 }
 
 .container-whole .row .col-content{
-	margin-top: 50%;
+	border-left-width: 0.4em;
+	border-left-style: solid;
+	border-image:
+		linear-gradient(
+			to left,
+			#4b006e,
+			#dfdede
+		) 1 75%;
+	
+}
+
+.container-whole .row .col-nav .row-nested .col-bigscope{
+	position: fixed;
+	top: 50%;
+	left: 3em;
+}
+
+.container-whole .row .col-nav .row-nested .col-smallscope{
+	position: fixed;
+	top: 47.3%;
+	left: 13.5%;
+}
+
+.container-whole .row .col-content .row-nested-persona{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.container-whole .row .col-content .row-nested-persona .persona-picture{
+	border-radius: 0.75em;
+	padding-top: 0.4em;
+	padding-bottom: 0.5em;
+}
+
+.container-whole .row .col-content .row-nested-persona .col-persona1{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.container-whole .row .col-content .row-nested-persona .col-persona1 .persona-list{
+	font-size: 130%;
+}
+
+.container-whole .row .col-content .row-nested-persona .col-persona1 .persona-list-likes{
+	font-size: 130%;
+	padding-left: 1em;
 }
 
 .box{
@@ -97,4 +144,32 @@ body{
 	width: 50px;
 	height: 50px;
 	margin-bottom: 20%;
+}
+
+h2{
+	padding-top: 0.33em;
+	font-weight: bold;
+}
+
+h3{
+	padding-top: 0.25em;
+	text-decoration: underline;
+}
+
+h4{
+	padding-top: 0.2em;
+	font-style: italic;
+}
+
+p{
+	text-align: justify;
+}
+
+hr{
+	height: 1px;
+	background: linear-gradient(to right, #650094, #2a2a2a, #650094, #2a2a2a, #650094);
+}
+
+img{
+	
 }
