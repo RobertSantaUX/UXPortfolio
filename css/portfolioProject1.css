@@ -94,7 +94,7 @@ body{
 	border-image:
 		linear-gradient(
 			to left,
-			#4b006e,
+			#2e105b,
 			#dfdede
 		) 1 75%;
 	
@@ -119,12 +119,22 @@ body{
 }
 
 .container-whole .row .col-content .row-nested-persona .persona-picture{
-	border-radius: 0.75em;
+	border-radius: 1em;
 	padding-top: 0.4em;
 	padding-bottom: 0.5em;
+	margin-right: 0;
+	padding-right: 0;
+	border-right: 0;
+	float: right;
 }
 
 .container-whole .row .col-content .row-nested-persona .col-persona1{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.container-whole .row .col-content .row-nested-persona .col-persona2{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -147,6 +157,7 @@ body{
 }
 
 h2{
+	color: #2e105b;
 	padding-top: 0.33em;
 	font-weight: bold;
 }
@@ -161,6 +172,12 @@ h4{
 	font-style: italic;
 }
 
+h5{
+	padding-bottom: 0;
+	margin-bottom: -1em;
+	font-size: 115%;
+}
+
 p{
 	text-align: justify;
 }
@@ -171,5 +188,19 @@ hr{
 }
 
 img{
-	
+	transition: all .3s ease;
+	filter: drop-shadow(1px 3px 3px #2a2a2a);
+}
+
+img:hover{
+	transform: scale(1.015);
+}
+
+.wireframe-image{
+	margin-bottom: 0.33em;
+}
+
+.wireframe-images{
+	padding-left: 2em;
+	margin-bottom: 0.33em;
 }
