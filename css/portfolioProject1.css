@@ -100,44 +100,38 @@ body{
 	
 }
 
-.container-whole .row .col-nav .row-nested .col-bigscope{
-	position: fixed;
-	top: 50%;
-	left: 0;
-	font-size: 170%;
-	line-height: 160%;
-}
-
 .container-whole .row .col-nav .row-nested .col-smallscope{
+	margin: 0;
+	padding: 0;
 	position: fixed;
-	top: 47.3%;
-	left: 13.5%;
-	font-size: 170%;
-	line-height: 160%;
+	left: 2.5%;
+	font-size: 190%;
+	line-height: 180%;
 }
 
-.container-whole .row .col-nav .row-nested .col-bigscope a{
+.container-whole .row .col-nav .row-nested .col-smallscope .project-backToTop{
+	margin: 0;
+	position: fixed;
+	top: 87.5%;
+	left: 2.5%;
+	padding: 0 0.7em;
+	font-size: 80%;
+	color: #2e105b;
 	cursor: pointer;
-	text-decoration: none;
-	color: #2a2a2a;
-	border: 2px solid #dfdede;
-	border-radius: 100px;
-	padding: 0.15em 0.5em;
 	transition: all 150ms ease;
 }
 
-.container-whole .row .col-nav .row-nested .col-bigscope a:hover{
-	text-decoration: none !important;
-	color: #d8d8d8 !important;
-	background-color: #4b006e !important;
-	transition-delay: 10ms !important;
+.container-whole .row .col-nav .row-nested .col-smallscope .project-backToTop:hover{
+	background-color: #fff;
+	border-radius: 100px;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .container-whole .row .col-nav .row-nested .col-smallscope a{
 	cursor: pointer;
 	text-decoration: none;
 	color: #2a2a2a;
-	border: 2px solid #dfdede;
 	border-radius: 100px;
 	padding: 0.15em 0.5em;
 	transition: all 150ms ease;
@@ -148,6 +142,10 @@ body{
 	color: #d8d8d8 !important;
 	background-color: #4b006e !important;
 	transition-delay: 10ms !important;
+}
+
+.container-whole .row .col-content .problem{
+	padding: 0 !important;
 }
 
 
@@ -186,13 +184,6 @@ body{
 .container-whole .row .col-content .row-nested-persona .col-persona1 .persona-list-likes{
 	font-size: 130%;
 	padding-left: 1em;
-}
-
-.box{
-	background: red;
-	width: 50px;
-	height: 50px;
-	margin-bottom: 20%;
 }
 
 h2{
@@ -260,6 +251,7 @@ img:hover{
 }
 
 #copyright{
+	color: rgba(255, 255, 255, 0.548);
     margin-bottom: 0.85%;
     margin-top: 0.85%;
 }

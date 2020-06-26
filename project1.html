@@ -33,23 +33,20 @@
 			<div class="row">
 				<div class="col-3 col-nav">
 					<div class="row row-nested">
-						<div class="col-5 col-bigscope">
-							<a class="project-bigscope1" id="theStartNav" onClick="jumpToTop()">The start</a>
+						<div class="col col-smallscope">
+							<a class="project-smallscope1" id="personasNav" onClick="jumpToPersonas()">User personas</a>
 							<div class="w-100"></div>
-							<a class="project-bigscope2" id="theJourneyNav" onClick="jumpToPersonas()">The journey</a>
-							<div class="w-100"></div>
-							<a class="project-bigscope3" id="theDestinationNav" onClick="jumpToPrototype()">The destination</a>
-						</div>
-						<div class="col-7 col-smallscope">
-							<a class="project-smallscope1" id="personasNav" onClick="jumpToPersonas()">Personas</a>
-							<div class="w-100"></div>
-							<a class="project-smallscope2" id="requirementsNav" onClick="jumpToRequirements()">Requirements</a>
+							<a class="project-smallscope2" id="requirementsNav" onClick="jumpToRequirements()">Main requirements & features</a>
 							<div class="w-100"></div>
 							<a class="project-smallscope3" id="userJourneyNav" onClick="jumpToUserJourney()">User journey</a>
 							<div class="w-100"></div>
 							<a class="project-smallscope4" id="wireframesNav" onClick="jumpToWireframes()">Wireframes</a>
 							<div class="w-100"></div>
-							<a class="project-smallscope5" id="prototypeNav" onClick="jumpToPrototype()">Prototype</a>
+							<a class="project-smallscope5" id="HFDNav" onClick="jumpToHFD()">High-fidelity design</a>
+							<div class="w-100"></div>
+							<a class="project-smallscope6" id="prototypeNav" onClick="jumpToPrototype()">Final prototype</a>
+							<div class="w-100"></div>
+							<p class="project-backToTop" id="backToTopNav" onClick="jumpToTop()">Go up</p>
 						</div>
 					</div>
 				</div>
@@ -221,19 +218,19 @@
 
 					<h2 id="UserJourneyJump">User journey - Onboarding</h2>
 					<a target="blank" href="images/user journey.png">
-						<img src="images/user journey.png" alt="User Journey chart" width="1200">
+						<img src="images/user journey.png" alt="User Journey chart" width="1200" id="userJourney">
 					</a>
 
 					<hr>
 
 					<h2 id="WireframesJump">Wireframes</h2>
-					<p>
+					<p id="wireframeText">
 						Now that we have defined what the app should be, created personas and outlined the main features and the user journey for the onboarding part, we can start designing how the app should look.
 						I started with low-fidelity designs: wireframes on paper. I started playing around with ideas: looks, layouts, etc. I sketched these ideas on paper and then asked some other people 
 						to vote on them. You can see the different ideas on the pictures below, and you can also see the ones that got the most votes: their letters are circled.
 					</p>
 					<a target="blank" href="images/registration.jpg">
-						<img class="wireframe-image" src="images/registration.jpg" alt="Registration & login" width="400" height="530">
+						<img class="wireframe-image" src="images/registration.jpg" alt="Registration & login" width="400" height="530" id="wireframe1">
 					</a>
 					<a target="blank" href="images/account linking.jpg">
 						<img class="wireframe-images" src="images/account linking.jpg" alt="Account linking" width="400" height="530">
@@ -243,8 +240,8 @@
 					</a>
 					<p></p>
 
-					<h2>High-fidelity design</h2>
-					<p>
+					<h2 id="HFDJump">High-fidelity design</h2>
+					<p id="HFDText1">
 						Now that the general direction of the design of the product has been outlined, it was time to move on to the next phase: high-fidelity designs and prototyping.
 						For this, I'd decided to use Figma. Over the next couple of days I started designing the app. First, the onboarding part and every screen of it.
 						Then came the main main part(s) of the application: the main screen and its details. And lastly, the user's profile and settings. The reason I'd decided to go in this order 
@@ -253,12 +250,15 @@
 						I conducted multiple usability tests. I shared my Figma prototype with a group of people and asked them to try to use it. I told them that it was a prototype that didn't contain any code 
 						so it won't be taking into account any choices they make (eg. choosing a theme), but other than that, they should treat as if it was a near-ready product.
 					</p>
-					<p>
+					<p id="HFDText2">
 						Some tests were one-on-one interviews where I could get more detailed feedback and some were group sessions where I let the members bounce ideas off of each other.
-						Based on the feedbacks I got, the designs were adjusted multiple times. Here, you can see some that didn't make it:
+						Based on the feedbacks I got, the designs were adjusted multiple times.
+					</p>
+					<p>
+						Here, you can see some that didn't make it:
 					</p>
 					<a target="blank" href="images/unused design1.jpg">
-					<img class="unused-design" src="images/unused design1.jpg" alt="Unused design 1">
+					<img class="unused-design" src="images/unused design1.jpg" alt="Unused design 1" id="HFD1">
 					</a>
 					<a target="blank" href="images/unused design2.jpg">
 					<img class="unused-designs" src="images/unused design2.jpg" alt="Unused design 2">
@@ -268,12 +268,12 @@
 					</a>
 					<br>
 					<a target="blank" href="images/unused design4.jpg">
-					<img class="unused-design" src="images/unused design4.jpg" alt="Unused design 4">
+					<img class="unused-design" src="images/unused design4.jpg" alt="Unused design 4" id="HFD4">
 					</a>
 					<a target="blank" href="images/unused design5.jpg">
 					<img class="unused-designs" src="images/unused design5.jpg" alt="Unused design 5">
 					</a>
-					<p>
+					<p id="HFDText3">
 						During this time, some features were cancelled as well, like the connections and planning features, that would've allowed users to add other users and plan watching something with them. 
 						Other features have been added that weren't among the initial ones, like the ability to report a bug or log out.
 						The product's visual customization by the user was also toned back, in order to keep the signature color scheme and general feel of the app.
@@ -284,7 +284,7 @@
 						Here, you can find the latest prototype. Feel free to play around with it!
 					</p>
 					<div id="figmaPrototype">
-						<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1200" height="675" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqXv4AQqmDPmSOh80k8xEUJ%2FContent-Hub%3Fnode-id%3D102%253A482%26viewport%3D172%252C91%252C0.1915488839149475%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+						<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1200" height="675" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqXv4AQqmDPmSOh80k8xEUJ%2FContent-Hub%3Fnode-id%3D102%253A482%26viewport%3D172%252C91%252C0.1915488839149475%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen id="figmaPrototype"></iframe>
 					</div>
 				</div>
 			</div>
@@ -304,7 +304,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		<script>
-			window.onscroll = function() {StyleWireframes(), StylePersonas(), StyleRequirements()};
+			window.onscroll = function() {StyleWireframes(), StylePersonas(), StyleRequirements(), StyleUserJourney(), StylePrototype(), StyleHFD()};
 
 			var isInViewport = function (elem) {
 				var bounding = elem.getBoundingClientRect();
@@ -320,6 +320,7 @@
 			var requirements = document.getElementById("RequirementsJump");
 			var userJourney = document.getElementById("UserJourneyJump");
 			var wireframes = document.getElementById("WireframesJump");
+			var hfd = document.getElementById("HFDJump");
 			var prototype = document.getElementById("ContentHubJump");
 
 			function jumpToTop(){
@@ -343,6 +344,11 @@
 
 			function jumpToWireframes() {
 				wireframes.scrollIntoView(true);
+				window.scrollBy(0, -60);
+			}
+
+			function jumpToHFD() {
+				hfd.scrollIntoView(true);
 				window.scrollBy(0, -60);
 			}
 
@@ -371,13 +377,47 @@
 				}
 			}
 
+			function StyleUserJourney() {
+				if (isInViewport(document.getElementById("userJourney"))) {
+					document.getElementById("userJourneyNav").style.backgroundColor = "#2a2a2a";
+					document.getElementById("userJourneyNav").style.color = "#d8d8d8";
+				} else {
+					document.getElementById("userJourneyNav").style.backgroundColor = "#dfdede";
+					document.getElementById("userJourneyNav").style.color = "#2a2a2a";
+				}
+			}
+
 			function StyleWireframes() {
-				if (isInViewport(document.getElementById("WireframesJump"))) {
+				if (isInViewport(document.getElementById("wireframeText"))) {
 					document.getElementById("wireframesNav").style.backgroundColor = "#2a2a2a";
 					document.getElementById("wireframesNav").style.color = "#d8d8d8";
 				} else {
 					document.getElementById("wireframesNav").style.backgroundColor = "#dfdede";
 					document.getElementById("wireframesNav").style.color = "#2a2a2a";
+				}
+			}
+
+			function StyleHFD() {
+				if (isInViewport(document.getElementById("HFDText1")) || 
+				isInViewport(document.getElementById("HFDText2")) ||
+				isInViewport(document.getElementById("HFDText3")) ||
+				isInViewport(document.getElementById("HFD1")) ||
+				isInViewport(document.getElementById("HFD4"))) {
+					document.getElementById("HFDNav").style.backgroundColor = "#2a2a2a";
+					document.getElementById("HFDNav").style.color = "#d8d8d8";
+				} else {
+					document.getElementById("HFDNav").style.backgroundColor = "#dfdede";
+					document.getElementById("HFDNav").style.color = "#2a2a2a";
+				}
+			}
+
+			function StylePrototype() {
+				if (isInViewport(document.getElementById("figmaPrototype"))) {
+					document.getElementById("prototypeNav").style.backgroundColor = "#2a2a2a";
+					document.getElementById("prototypeNav").style.color = "#d8d8d8";
+				} else {
+					document.getElementById("prototypeNav").style.backgroundColor = "#dfdede";
+					document.getElementById("prototypeNav").style.color = "#2a2a2a";
 				}
 			}
 		</script>
