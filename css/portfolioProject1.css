@@ -105,14 +105,14 @@ body{
 	padding: 0;
 	position: fixed;
 	left: 2.5%;
-	font-size: 190%;
-	line-height: 180%;
+	font-size: 150%;
+	line-height: 225%;
 }
 
 .container-whole .row .col-nav .row-nested .col-smallscope .project-backToTop{
 	margin: 0;
 	position: fixed;
-	top: 87.5%;
+	top: 88%;
 	left: 2.5%;
 	padding: 0 0.7em;
 	font-size: 80%;
@@ -160,6 +160,7 @@ body{
 	padding-top: 0.4em;
 	padding-bottom: 0.5em;
 	margin-right: 0;
+	margin-bottom: 0.5em;
 	padding-right: 0;
 	border-right: 0;
 	float: right;
