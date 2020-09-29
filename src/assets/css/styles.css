@@ -1,0 +1,43 @@
+.element-dark {
+    background-color: #2A2A2A;
+    color: #E6E6E6;
+}
+
+.spacer {
+    padding: 0 1.5em 0 1.5em;
+}
+
+.btn.btn-nav {
+    font-size: 30px;
+    line-height: 37px;
+    color: #E6E6E6;
+    padding: 0.2em 1em 0.2em 1em;
+    margin: 0 0.5em 0 0.5em;
+}
+
+.btn.btn-nav:not(.router-link-exact-active):hover {
+    background-color:#4b006e;
+    color: #E6E6E6;
+}
+
+.hl-color-blue {
+    color: #4981D5;
+}
+
+.hl-color-purple {
+    color: #4B006E;
+}
+
+.border-rounded {
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+}
+
+.not-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.not-link:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
