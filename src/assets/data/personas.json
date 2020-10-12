@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Bill",
+    "gender": "male",
+    "age": 16,
+    "job": "student",
+    "picture": "student.jpg",
+    "likes": [
+      "Clear, obvious instructions",
+      "Pragmatism",
+      "Fairness"
+    ],
+    "dislikes": [
+      "Wasting time",
+      "Being misled",
+      "Inaccuracy"
+    ],
+    "description": "Bill comes from a middle-class family. Father is a lawyer, mother is a teacher. He is currently in middle school, focusing on maths and physics. Has a game console, which he uses to play games and watch streams, and a laptop to message friends & family and do homework. Bill has around 3-4 hours of free time a day and he typically uses it to play video games and watch videos. He has an affinity for technology. During school holidays, he has a lot of free time on his hands."
+  },
+  {
+    "name": "Martha",
+    "gender": "female",
+    "age": 39,
+    "job": "animator",
+    "picture": "animator.jpg",
+    "likes": [
+      "Precision",
+      "Clarity",
+      "(Trying out) new things"
+    ],
+    "dislikes": [
+      "Beating around the bush",
+      "When something doesn't work"
+    ],
+    "description": "Martha is a senior animator and has been working as one for 15 years. She loves it and is not planning on changing careers. She is very serious about matters connected to work, very conscious about attention to detail, but in her private life, she is quite relaxed and easy-going. When it comes to her day, she likes to have it defined – there’s a time for work, training, and private life. In her free time, she wants to have fun and relax – nothing serious. She is pretty straightforward as well."
+  },
+  {
+    "name": "Samantha",
+    "gender": "female",
+    "age": 24,
+    "job": "secretary trainee",
+    "picture": "secretary.jpg",
+    "likes": [
+      "Simplicity",
+      "Guidance"
+    ],
+    "dislikes": [
+      "Assumptions",
+      "Being overwhelmed",
+      "Being pressured into something"
+    ],
+    "description": "Samantha is not a tech-savvy person. She deals with what she has to at work and then at home, she watches the occasional video about various topics, like cooking or lifestyle. Even though, as a secretary, she has to work with timetables, she is all over the place herself. Sometimes she forgets something at home. Sometimes she is oblivious of what she wanted to do."
+  }
+]

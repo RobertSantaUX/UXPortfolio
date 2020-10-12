@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column align-items-center">
+  <main class="d-flex flex-column align-items-center">
     <p class="paragraph-1">
       Hi, I am <b class="hl-color-purple">Róbert Sánta</b>, an aspiring UX Designer, currently based in Hungary.
     </p>
@@ -17,7 +17,7 @@
         <div class="card-footer element-dark text-center">Contact me</div>
       </router-link>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -30,7 +30,7 @@ export default {
 .paragraph-1 {
   font-size: 40px;
   line-height: 49px;
-  margin: 1em 0 1em 0;
+  margin: 1em 0;
   width: 80%;
 }
 

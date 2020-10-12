@@ -1,6 +1,6 @@
 <template>
-  <div class="container text-justify">
-    <div class="row">
+  <main class="container text-justify">
+    <section class="row" style="background-color: #2A2A2A0A">
       <p class="col">
         <img id="profile-pic" src="@/assets/images/profile.jpg" alt="Profile" class="d-none d-md-block">
         Hi, I am Róbert.
@@ -19,8 +19,8 @@
         And there is no "one good answer", but multiple good ones and I can take various routes?
         Well, of course I found it to be the perfect fit for me, so, I began studying by myself.
       </p>
-    </div>
-    <div class="row">
+    </section>
+    <section class="row">
       <p class="col">
         <img id="satisfaction-pic" src="@/assets/images/user-satisfaction.jpg" alt="User satisfaction" class="d-none d-md-block">
         Here is how I think when helping to create a new product or improving an existing one:
@@ -35,8 +35,8 @@
         (and of course, we have to know who this user is - research, personas!) is the way to get a smile,
         instead of a frown!
       </p>
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
 <style scoped>
@@ -65,15 +65,25 @@ p {
 
 .container {
   max-width: fit-content;
-  margin: 0 3vw 0 3vw;
 }
 
 .row {
-  padding-bottom: 2em;
+  position: relative;
+  padding: 2em 3vw;
 }
 
 .row + .row {
-  border-top: 2px solid #4B006E;
   padding-top: 2em;
+  /*border-top: 2px solid #4B006E;*/
+}
+
+.row + .row:before {
+  content: '';
+  background-color: #4B006E;
+  position: absolute;
+  height: 2px;
+  top: -1px;
+  left: 3vw;
+  right: 3vw;
 }
 </style>

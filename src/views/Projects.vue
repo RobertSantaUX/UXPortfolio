@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <main class="container">
     <div class="row">
       <div class="col-12 col-lg-6">
         <router-link to="/projects/content_hub" class="card border-rounded d-flex flex-column not-link">
@@ -28,7 +28,7 @@
         </router-link>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -55,7 +55,7 @@ export default {
 .container {
   height: 100%;
   max-width: fit-content;
-  margin: 0 3vw 0 3vw;
+  margin: 3vw 3vw 0 3vw;
 }
 
 .col {
@@ -94,14 +94,14 @@ export default {
 
 .card-desc {
   max-height: 100%;
-  margin: 0.5em 1em 0.5em 1em;
+  margin: 0.5em 1em;
   color: inherit;
   transition: color 200ms ease-in 0ms, max-height 600ms ease-in, margin-bottom 600ms, margin-top 600ms;
 }
 
 .card:hover .card-desc {
   max-height: 0;
-  margin: 0 1em 0 1em;
+  margin: 0 1em;
   color: transparent;
   transition: color 200ms ease-out 0ms, max-height 800ms cubic-bezier(0, 1, 0, 1), margin-bottom 800ms ease-out, margin-top 800ms ease-out;
 }

@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <nav id="nav" class="navbar navbar-dark navbar-expand-lg fixed-top element-dark hidden-xs hidden-sm">
+  <div id="app" class="d-flex flex-column">
+    <nav id="nav" class="navbar navbar-dark navbar-expand-lg sticky-top element-dark hidden-xs hidden-sm">
       <router-link class="navbar-brand btn btn-nav" style="font-size:32px;line-height:39px;" to="/">Róbert Sánta</router-link>
       <button class="navbar-toggler"
               type="button"
@@ -25,8 +25,8 @@
         </ul>
       </div>
     </nav>
-    <router-view/>
-    <footer id="footer" class="fixed-bottom text-center py-3 element-dark">
+    <router-view class="flex-grow-1 flex-shrink-1"/>
+    <footer id="footer" class="text-center py-3 element-dark">
       <router-link id="copyright" to="/">© 2020 Copyright: <span class="hl-color-blue">Róbert Sánta</span></router-link>
     </footer>
   </div>
@@ -34,11 +34,12 @@
 
 <style scoped>
 #app {
+  height: 100vh;
   font: normal normal normal 26px/37px Corbel;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  padding: 100px 0 100px 0;
+  padding: 0;
 }
 
 #copyright {
