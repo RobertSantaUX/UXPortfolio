@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" preserveAspectRatio="none">
+    <path
+        stroke="#4b006e"
+        stroke-width="2px"
+        vector-effect="non-scaling-stroke"
+        fill="none"
+        d="M 100,0 L 100,50 Q 100,100 150,100 T 200,180 L 200,200"
+    />
+    <path
+        stroke="#4b006e"
+        stroke-width="2px"
+        vector-effect="non-scaling-stroke"
+        fill="none"
+        d="M 300,0 L 300,50 Q 300,100 250,100 T 200,180 L 200,200"
+    />
+</svg>
