@@ -1,10 +1,10 @@
 <template>
   <div
-    class="container-fluid"
-    data-spy="scroll"
-    data-target="#sidenav"
-    data-offset="50"
-    style="position: relative; overflow-y: scroll"
+      class="container-fluid"
+      data-offset="50"
+      data-spy="scroll"
+      data-target="#sidenav"
+      style="position: relative; overflow-y: scroll"
   >
     <div class="row">
       <div class="col-2 d-none d-lg-block sidenav-grey"></div>
@@ -16,22 +16,22 @@
     </div>
     <div class="row">
       <nav
-        id="sidenav"
-        class="col-2 d-none d-lg-block sidenav-grey border-right-custom"
+          id="sidenav"
+          class="col-2 d-none d-lg-block sidenav-grey border-right-custom"
       >
         <div
-          class="sidenav-content-fix d-flex flex-column"
-          style="height: 75vh"
+            class="sidenav-content-fix d-flex flex-column"
+            style="height: 75vh"
         >
-          <a href="#summary" class="nav-link not-link">Summary</a>
-          <a href="#personas" class="nav-link not-link">User personas</a>
-          <a href="#requirements" class="nav-link not-link">Requirements</a>
-          <a href="#user_journey" class="nav-link not-link">User journey</a>
-          <a href="#wireframes" class="nav-link not-link">Wireframes</a>
-          <a href="#high-fi_design" class="nav-link not-link">High-fi design</a>
-          <a href="#prototype" class="nav-link not-link">Final prototype</a>
+          <a class="nav-link not-link" href="#summary">Summary</a>
+          <a class="nav-link not-link" href="#personas">User personas</a>
+          <a class="nav-link not-link" href="#requirements">Requirements</a>
+          <a class="nav-link not-link" href="#user_journey">User journey</a>
+          <a class="nav-link not-link" href="#wireframes">Wireframes</a>
+          <a class="nav-link not-link" href="#high-fi_design">High-fi design</a>
+          <a class="nav-link not-link" href="#prototype">Final prototype</a>
           <span style="flex: 1"></span>
-          <a href="#" id="to-the-top" class="not-link">To the top</a>
+          <a id="to-the-top" class="not-link" href="#">To the top</a>
         </div>
       </nav>
       <main class="col-12 col-lg-10 page-content-bg">
@@ -40,22 +40,22 @@
           <div class="d-flex flex-column flex-sm-row">
             <div id="summary-img-showcase">
               <img
-                src="@/assets/images/landing-screen.png"
-                alt="Landing screen"
+                  alt="Landing screen"
+                  src="@/assets/images/landing-screen.png"
               />
-              <img src="@/assets/images/login.png" alt="Login screen" />
+              <img alt="Login screen" src="@/assets/images/login.png"/>
               <img
-                src="@/assets/images/fts-linking_linked.png"
-                alt="Linking screen"
+                  alt="Linking screen"
+                  src="@/assets/images/fts-linking_linked.png"
               />
               <img
-                src="@/assets/images/fts-customize.png"
-                alt="Customize screen"
+                  alt="Customize screen"
+                  src="@/assets/images/fts-customize.png"
               />
-              <img src="@/assets/images/main-screen.png" alt="Main screen" />
+              <img alt="Main screen" src="@/assets/images/main-screen.png"/>
               <img
-                src="@/assets/images/profile-personal.png"
-                alt="Settings screen"
+                  alt="Settings screen"
+                  src="@/assets/images/profile-personal.png"
               />
             </div>
             <div class="d-flex flex-column justify-content-center pl-2">
@@ -127,14 +127,15 @@
             </div>
           </div>
           <img
-            src="@/assets/images/lines/prerequisites_lines.svg"
-            style="height: 18vh; width: 100%"
+              alt="Prerequisites lines"
+              src="@/assets/images/lines/prerequisites_lines.svg"
+              style="height: 18vh; width: 100%"
           />
         </section>
         <section id="ideation">
           <h1>Ideation</h1>
-          <section id="personas">
-            <h2 class="hl-color-purple">User personas:</h2>
+          <section id="personas" class="text-left">
+            <h2 class="mt-4 mb-4 hl-color-purple">User personas:</h2>
             <!--          <div v-for="(persona, i) in personas" :key="persona">-->
             <!--            <div>-->
             <!--              Persona #{{i+1}} - <i class="hl-color-purple">{{persona.name}}</i><br>-->
@@ -191,21 +192,34 @@
           <section id="user_journey" class="text-left">
             <h2 class="mt-4 mb-4 hl-color-purple">User journey - Onboarding</h2>
             <img
-              id="user-journey-table"
-              src="@/assets/images/user_journey.png"
-              alt="User journey"
+                id="user-journey-table"
+                alt="User journey"
+                src="@/assets/images/user_journey.png"
             />
           </section>
-          <div class="container-fluid">
+          <div class="container-fluid mt-5">
             <div class="row">
-              <div class="col-4"><span>Personas</span></div>
-              <div class="col-4"><span>Features</span></div>
-              <div class="col-4"><span>User journey</span></div>
+              <div class="col-4">
+                <span class="section-summary-tag" style="width: 50%">
+                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark"> Personas
+                </span>
+              </div>
+              <div class="col-4">
+                <span class="section-summary-tag" style="width: 50%">
+                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark"> Features
+                </span>
+              </div>
+              <div class="col-4">
+                <span class="section-summary-tag" style="width: 50%">
+                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark"> User journey
+                </span>
+              </div>
             </div>
           </div>
           <img
-            src="@/assets/images/lines/user_journey_lines.svg"
-            style="height: 10vh; width: 100%"
+              alt="User journey lines"
+              src="@/assets/images/lines/user_journey_lines.svg"
+              style="height: 15vh; width: 100%"
           />
         </section>
         <section id="design">
@@ -227,20 +241,20 @@
               <div class="row">
                 <div class="col-4">
                   <img
-                    src="@/assets/images/registration.jpg"
-                    alt="Registration"
+                      alt="Registration"
+                      src="@/assets/images/registration.jpg"
                   />
                 </div>
                 <div class="col-4">
                   <img
-                    src="@/assets/images/account_linking.jpg"
-                    alt="Account linking"
+                      alt="Account linking"
+                      src="@/assets/images/account_linking.jpg"
                   />
                 </div>
                 <div class="col-4">
                   <img
-                    src="@/assets/images/notification.jpg"
-                    alt="Notification"
+                      alt="Notification"
+                      src="@/assets/images/notification.jpg"
                   />
                 </div>
               </div>
@@ -283,6 +297,79 @@
               if you'd like to, you can check why these design ended up reworked
               or scratched completely, using the buttons next to them.
             </p>
+            <div class="container-fluid" style="font-size: 24px; line-height: 27px; margin-bottom: 1rem">
+              <div class="row">
+                <div class="col-12 col-lg-3 text-center">
+                  <img alt="Unused design 1" src="@/assets/images/unused_design1.jpg" class="w-100">
+                </div>
+                <div id="ud1" class="d-none d-lg-block col-lg-3 position-relative ud-desc" style="visibility: hidden; opacity: 0;">
+                  <div class="position-absolute" style="top: 15%">
+                    Nothing separates the title(s) section from the rest of the app.
+                  </div>
+                  <div class="position-absolute" style="top: 35%">
+                    Categories and filtering are not needed, it might hinder the user's experience (they might find it hard to find an app). Let's just put every app in one list.
+                  </div>
+                </div>
+                <div id="ud2" class="d-none d-lg-block col-lg-3 position-relative ud-desc" style="visibility: hidden; opacity: 0;">
+                  <div class="position-absolute" style="top: 15%">
+                    Nothing separates the title(s) section from the rest of the app.
+                  </div>
+                  <div class="position-absolute" style="top: 60%">
+                    It's way too invasive to ask whether the user is a parent during onboarding and it might deter them from using the app.
+                  </div>
+                  <div class="position-absolute" style="bottom: 2%">
+                    The "Skip" button is way too small
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 text-center">
+                  <img alt="Unused design 2" src="@/assets/images/unused_design2.jpg" class="w-100">
+                </div>
+              </div>
+              <div class="row d-none d-lg-flex">
+                <div class="col-3"></div>
+                <div class="col-3 text-center">
+                  <closeable-button closed text="Why didn't this make it?" v-on:click="onToggleHide('ud1')"/>
+                </div>
+                <div class="col-3 text-center">
+                  <closeable-button closed text="Why didn't this make it?" v-on:click="onToggleHide('ud2')"/>
+                </div>
+                <div class="col-3"></div>
+              </div>
+              <div class="row d-none d-lg-flex">
+                <div class="col-3"></div>
+                <div class="col-3 text-center">
+                  <closeable-button closed text="Why didn't this make it?" v-on:click="onToggleHide('ud3')"/>
+                </div>
+                <div class="col-3 text-center">
+                  <closeable-button closed text="Why didn't this make it?" v-on:click="onToggleHide('ud4')"/>
+                </div>
+                <div class="col-3"></div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-3 text-center">
+                  <img alt="Unused design 3" src="@/assets/images/unused_design3.jpg" class="w-100">
+                </div>
+                <div id="ud3" class="d-none d-lg-block col-lg-3 ud-desc" style="visibility: hidden; opacity: 0;">
+                  <div class="position-absolute" style="top: 15%">
+                    Nothing separates the title(s) section from the rest of the app.
+                  </div>
+                  <div class="position-absolute" style="top: 35%">
+                    We are the designers of the app, we should come up with a good design and feel that the user is comfortable with. Giving the user excessive customizability could hurt visibility as well.
+                  </div>
+                </div>
+                <div id="ud4" class="d-none d-lg-block col-lg-3 ud-desc" style="visibility: hidden; opacity: 0;">
+                  <div class="position-absolute" style="top: 15%">
+                    Nothing separates the title(s) section from the rest of the app.
+                  </div>
+                  <div class="position-absolute" style="top: 40%">
+                    The entire connect/planner feature was cancelled, so the design had to be too.
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 text-center">
+                  <img alt="Unused design 4" src="@/assets/images/unused_design4.jpg" class="w-100">
+                </div>
+              </div>
+            </div>
             <p>
               During this time, some features were cancelled as well, like the
               connections and planning features, that would've allowed users to
@@ -293,15 +380,24 @@
               the signature color scheme and general feel of the app.
             </p>
           </section>
-          <div class="container-fluid">
+          <div class="container-fluid mt-5">
             <div class="row">
-              <div class="col-6"><span>Low-fidelity design</span></div>
-              <div class="col-6"><span>High-fidelity design</span></div>
+              <div class="col-6">
+                <span class="section-summary-tag" style="width: 50%">
+                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark"> Low-fidelity design
+                </span>
+              </div>
+              <div class="col-6">
+                <span class="section-summary-tag" style="width: 50%">
+                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark"> High-fidelity design
+                </span>
+              </div>
             </div>
           </div>
           <img
-            src="@/assets/images/lines/design_lines.svg"
-            style="height: 15vh; width: 100%"
+              alt="Design lines"
+              src="@/assets/images/lines/design_lines.svg"
+              style="height: 15vh; width: 100%"
           />
         </section>
         <section id="prototype">
@@ -313,11 +409,11 @@
               with it!
             </p>
             <iframe
-              id="figmaPrototype"
-              width="1200"
-              height="675"
-              allowfullscreen
-              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqXv4AQqmDPmSOh80k8xEUJ%2FContent-Hub%3Fnode-id%3D102%253A482%26viewport%3D172%252C91%252C0.1915488839149475%26scaling%3Dscale-down&chrome=DOCUMENTATION"
+                id="figmaPrototype"
+                allowfullscreen
+                height="675"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqXv4AQqmDPmSOh80k8xEUJ%2FContent-Hub%3Fnode-id%3D102%253A482%26viewport%3D172%252C91%252C0.1915488839149475%26scaling%3Dscale-down&chrome=DOCUMENTATION"
+                width="1200"
             >
             </iframe>
           </section>
@@ -329,14 +425,29 @@
 
 <script>
 import personas from "@/assets/data/personas.json";
+import CloseableButton from "@/components/CloseableButton";
 
 export default {
   name: "ContentHub",
+  components: {CloseableButton},
   data: function () {
     return {
       personas,
     };
   },
+  methods: {
+    onToggleHide: function (id) {
+      const e = document.getElementById(id);
+      console.log(e?.style?.visibility)
+      if (e?.style?.visibility === "hidden") {
+        e.style.visibility = "visible";
+        e.style.opacity = "1";
+      } else {
+        e.style.visibility = "hidden";
+        e.style.opacity = "0";
+      }
+    }
+  }
 };
 </script>
 
@@ -368,7 +479,7 @@ main > section {
 #summary-img-showcase img {
   width: 10vw;
   margin: 0.5rem;
-  box-shadow: 0px 5px 10px #00000073;
+  box-shadow: 0 5px 10px #00000073;
 }
 
 #prerequisites,
@@ -415,7 +526,7 @@ main > section {
 }
 
 #user-journey-table {
-  box-shadow: 0px 5px 10px #00000073;
+  box-shadow: 0 5px 10px #00000073;
   border-radius: 15px;
 }
 
@@ -426,7 +537,7 @@ main > section {
 #wireframes img {
   height: 100%;
   width: 100%;
-  box-shadow: 0px 5px 10px #00000073;
+  box-shadow: 0 5px 10px #00000073;
 }
 
 #figmaPrototype {
@@ -443,6 +554,17 @@ h1 {
 
 h2 {
   font-weight: bold;
+}
+
+img.checkmark {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }
 
 .border-right-custom {
@@ -484,5 +606,40 @@ h2 {
 
 .page-content-bg {
   background-color: #6e00a105;
+}
+
+.show-hide-button {
+  font-size: 24px;
+  line-height: 35px;
+  background-color: #4B006E;
+  color: #E6E6E6;
+  box-shadow: 0 0 7px #00000091;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  outline: 0;
+  padding: 0.3em;
+  margin: 0.5em 0;
+  transition: background-color 200ms ease-in 0ms, border 200ms ease-in 0ms;
+}
+
+.show-hide-button:hover {
+  background-color: #2A2A2A;
+  border: 1px solid #FFFFFF;
+  transition: background-color 200ms ease-out 0ms, border 200ms ease-out 0ms;
+}
+
+.ud-desc {
+  transition: opacity 100ms linear 0ms, visibility 100ms linear 0ms;
+}
+
+.section-summary-tag {
+  display: inline-block;
+  position: relative;
+  font-size: 32px;
+  line-height: 37px;
+  background-color: white;
+  border: 1px solid #4b006e;
+  border-radius: 7px;
+  padding: 0.1em;
 }
 </style>
