@@ -31,7 +31,7 @@
           <a class="nav-link not-link" href="#high-fi_design">High-fi design</a>
           <a class="nav-link not-link" href="#prototype">Final prototype</a>
           <span style="flex: 1"></span>
-          <a id="to-the-top" class="not-link" href="#">To the top</a>
+          <a id="to-the-top" class="not-link" href="#disclaimer">To the top</a>
         </div>
       </nav>
       <main class="col-12 col-lg-10 page-content-bg">
@@ -73,62 +73,61 @@
         </section>
         <section id="prerequisites">
           <h1 class="mt-5 mb-4">Prerequisites</h1>
-          <div class="container-fluid mt-1">
-            <div class="row">
-              <section id="problem" class="col-3">
-                <div class="content">
-                  <h2 class="hl-color-purple">The problem</h2>
-                  <p>
-                    Let's say we want to spend some free time on the computer
-                    and watch a movie/series episode, a couple videos or maybe
-                    some livestreams, but we don't know what exactly we want to
-                    see. We have to check every app/site we like to spend time
-                    on to see what's new, what's happening. This is
-                    time-consuming.
-                  </p>
-                </div>
-              </section>
-              <section id="idea" class="col-3">
-                <div class="content">
-                  <h2 class="hl-color-purple">The idea</h2>
-                  <p>
-                    We want to design an app that lists what a user can do in
-                    their free time, if they want to spend it watching something
-                    online. The app will show new pieces of content from
-                    different accounts in one place and provide quick access to
-                    them.
-                  </p>
-                </div>
-              </section>
-              <section id="target" class="col-3">
-                <div class="content">
-                  <h2 class="hl-color-purple">The target audience</h2>
-                  <p>
-                    People, who spend a lot of free time on the internet. Users,
-                    who consume mainly digital content in the form of
-                    livestreams, videos, series, movies and video games. People,
-                    who are registered on multiple sites that provide the
-                    aforementioned content and thus need to see what is
-                    happening on those platforms.
-                  </p>
-                </div>
-              </section>
-              <section id="drawbacks" class="col-3">
-                <div class="content">
-                  <h2 class="hl-color-purple">Possible drawbacks</h2>
-                  <p>
-                    We need to connect different accounts with this app. This
-                    means that we have to contact other companies and ask for
-                    permission. Also, accessing user data through API's might be
-                    a very difficult development task.
-                  </p>
-                </div>
-              </section>
-            </div>
+          <div class="d-flex flex-column flex-lg-row justify-content-lg-between mt-1 ml-5 ml-lg-0">
+            <section id="problem" class="ml-2 mr-2" style="flex: 1">
+              <div class="content text-left text-lg-center">
+                <h2 class="hl-color-purple">The problem</h2>
+                <p class="pl-2 pr-2">
+                  Let's say we want to spend some free time on the computer
+                  and watch a movie/series episode, a couple videos or maybe
+                  some livestreams, but we don't know what exactly we want to
+                  see. We have to check every app/site we like to spend time
+                  on to see what's new, what's happening. This is
+                  time-consuming.
+                </p>
+              </div>
+            </section>
+            <section id="idea" class="ml-2 mr-2" style="flex: 1">
+              <div class="content text-left text-lg-center">
+                <h2 class="hl-color-purple">The idea</h2>
+                <p class="pl-2 pr-2">
+                  We want to design an app that lists what a user can do in
+                  their free time, if they want to spend it watching something
+                  online. The app will show new pieces of content from
+                  different accounts in one place and provide quick access to
+                  them.
+                </p>
+              </div>
+            </section>
+            <section id="target" class="ml-2 mr-2" style="flex: 1">
+              <div class="content text-left text-lg-center">
+                <h2 class="hl-color-purple">The target audience</h2>
+                <p class="pl-2 pr-2">
+                  People, who spend a lot of free time on the internet. Users,
+                  who consume mainly digital content in the form of
+                  livestreams, videos, series, movies and video games. People,
+                  who are registered on multiple sites that provide the
+                  aforementioned content and thus need to see what is
+                  happening on those platforms.
+                </p>
+              </div>
+            </section>
+            <section id="drawbacks" class="ml-2 mr-2" style="flex: 1">
+              <div class="content text-left text-lg-center">
+                <h2 class="hl-color-purple">Possible drawbacks</h2>
+                <p class="pl-2 pr-2">
+                  We need to connect different accounts with this app. This
+                  means that we have to contact other companies and ask for
+                  permission. Also, accessing user data through API's might be
+                  a very difficult development task.
+                </p>
+              </div>
+            </section>
           </div>
           <img
               alt="Prerequisites lines"
               src="@/assets/images/lines/prerequisites_lines.svg"
+              class="d-none d-lg-block"
               style="height: 18vh; width: 100%"
           />
         </section>
@@ -197,28 +196,30 @@
                 src="@/assets/images/user_journey.png"
             />
           </section>
-          <div class="container-fluid mt-5">
-            <div class="row">
-              <div class="col-4">
+          <div class="d-flex flex-column flex-lg-row mt-5 mb-5 mb-lg-0">
+            <div style="flex: 1">
                 <span class="section-summary-tag" style="width: 50%">
-                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark"> Personas
+                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark">
+                  <span>Personas</span>
                 </span>
-              </div>
-              <div class="col-4">
+            </div>
+            <div class="mt-4 mt-lg-0 mb-4 mb-lg-0" style="flex: 1">
                 <span class="section-summary-tag" style="width: 50%">
-                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark"> Features
+                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark">
+                  <span>Features</span>
                 </span>
-              </div>
-              <div class="col-4">
+            </div>
+            <div style="flex: 1">
                 <span class="section-summary-tag" style="width: 50%">
-                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark"> User journey
+                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark">
+                  <span>User journey</span>
                 </span>
-              </div>
             </div>
           </div>
           <img
               alt="User journey lines"
               src="@/assets/images/lines/user_journey_lines.svg"
+              class="d-none d-lg-block"
               style="height: 15vh; width: 100%"
           />
         </section>
@@ -322,7 +323,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-3 text-center">
-                  <img alt="Unused design 2" src="@/assets/images/unused_design2.jpg" class="w-100">
+                  <img alt="Unused design 2" src="@/assets/images/unused_design2.jpg" class="w-100 mt-3 mt-lg-0">
                 </div>
               </div>
               <div class="row d-none d-lg-flex">
@@ -347,7 +348,7 @@
               </div>
               <div class="row">
                 <div class="col-12 col-lg-3 text-center">
-                  <img alt="Unused design 3" src="@/assets/images/unused_design3.jpg" class="w-100">
+                  <img alt="Unused design 3" src="@/assets/images/unused_design3.jpg" class="w-100 mt-3 mt-lg-0">
                 </div>
                 <div id="ud3" class="d-none d-lg-block col-lg-3 ud-desc" style="visibility: hidden; opacity: 0;">
                   <div class="position-absolute" style="top: 15%">
@@ -366,7 +367,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-3 text-center">
-                  <img alt="Unused design 4" src="@/assets/images/unused_design4.jpg" class="w-100">
+                  <img alt="Unused design 4" src="@/assets/images/unused_design4.jpg" class="w-100 mt-3 mt-lg-0">
                 </div>
               </div>
             </div>
@@ -380,23 +381,24 @@
               the signature color scheme and general feel of the app.
             </p>
           </section>
-          <div class="container-fluid mt-5">
-            <div class="row">
-              <div class="col-6">
+          <div class="d-flex flex-column flex-lg-row mt-5 mb-5 mb-lg-0">
+            <div class="mb-4 mb-lg-0" style="flex: 1">
                 <span class="section-summary-tag" style="width: 50%">
-                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark"> Low-fidelity design
+                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark">
+                  <span>Low-fidelity design</span>
                 </span>
-              </div>
-              <div class="col-6">
+            </div>
+            <div style="flex: 1">
                 <span class="section-summary-tag" style="width: 50%">
-                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark"> High-fidelity design
+                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark">
+                  <span>High-fidelity design</span>
                 </span>
-              </div>
             </div>
           </div>
           <img
               alt="Design lines"
               src="@/assets/images/lines/design_lines.svg"
+              class="d-none d-lg-block"
               style="height: 15vh; width: 100%"
           />
         </section>
@@ -447,6 +449,19 @@ export default {
         e.style.opacity = "0";
       }
     }
+  },
+  mounted: function () {
+    document.querySelectorAll('a[href^="#"]')
+        .forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href'))
+                .scrollIntoView({
+                  behavior: 'smooth'
+                });
+          });
+    });
   }
 };
 </script>
@@ -542,6 +557,7 @@ main > section {
 
 #figmaPrototype {
   border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 h1 {
@@ -565,6 +581,11 @@ img.checkmark {
   bottom: 0;
   top: 0;
   margin: auto;
+}
+
+img.checkmark + span {
+  margin-left: 35px;
+  margin-right: 35px
 }
 
 .border-right-custom {
@@ -635,6 +656,7 @@ img.checkmark {
 .section-summary-tag {
   display: inline-block;
   position: relative;
+  min-width: max-content;
   font-size: 32px;
   line-height: 37px;
   background-color: white;
