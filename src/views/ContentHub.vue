@@ -135,26 +135,7 @@
           <h1>Ideation</h1>
           <section id="personas" class="text-left">
             <h2 class="mt-4 mb-4 hl-color-purple">User personas:</h2>
-            <!--          <div v-for="(persona, i) in personas" :key="persona">-->
-            <!--            <div>-->
-            <!--              Persona #{{i+1}} - <i class="hl-color-purple">{{persona.name}}</i><br>-->
-            <!--              <i class="hl-color-purple">{{persona.age}}</i> year old <i class="hl-color-purple">{{persona.job}}</i>-->
-            <!--            </div>-->
-            <!--            <img :src="require('@/assets/images/' + persona.picture)" :alt="persona.name" height="50" width="50">-->
-            <!--            <div>-->
-            <!--              What {{persona.gender === 'male' ? 'he' : 'she'}} likes:-->
-            <!--              <ul>-->
-            <!--                <li v-for="like in persona.likes" :key="like">{{like}}</li>-->
-            <!--              </ul>-->
-            <!--            </div>-->
-            <!--            <div>-->
-            <!--              What {{persona.gender === 'male' ? 'he' : 'she'}} doesn't like:-->
-            <!--              <ul>-->
-            <!--                <li v-for="dislike in persona.dislikes" :key="dislike">{{dislike}}</li>-->
-            <!--              </ul>-->
-            <!--            </div>-->
-            <!--            <p>{{persona.description}}</p>-->
-            <!--          </div>-->
+            <persona v-for="(persona, i) in personas" :key="persona" :index="i+1" :data="persona"/>
           </section>
           <section id="requirements" class="text-left">
             <h2 class="mt-4 mb-4 hl-color-purple">
@@ -428,10 +409,11 @@
 <script>
 import personas from "@/assets/data/personas.json";
 import CloseableButton from "@/components/CloseableButton";
+import Persona from "@/components/Persona";
 
 export default {
   name: "ContentHub",
-  components: {CloseableButton},
+  components: {Persona, CloseableButton},
   data: function () {
     return {
       personas,
