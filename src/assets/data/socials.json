@@ -1,0 +1,17 @@
+[
+  {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/",
+    "logo": "linkedin_logo.svg"
+  },
+  {
+    "name": "Facebook",
+    "link": "",
+    "logo": "facebook_logo_512.png"
+  },
+  {
+    "name": "Instagram",
+    "link": "",
+    "logo": "instagram_logo_1024.png"
+  }
+]
