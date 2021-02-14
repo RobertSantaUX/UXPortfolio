@@ -2,16 +2,19 @@
   {
     "name": "LinkedIn",
     "link": "https://www.linkedin.com/in/r%C3%B3bert-s%C3%A1nta-0928a918b/",
-    "logo": "linkedin_logo.svg"
+    "logo": "logo_1.svg",
+    "borderRadius": "5px"
   },
   {
     "name": "Facebook",
     "link": "",
-    "logo": "facebook_logo_512.png"
+    "logo": "logo_2.png",
+    "borderRadius": "28px"
   },
   {
     "name": "Instagram",
     "link": "",
-    "logo": "instagram_logo_1024.png"
+    "logo": "logo_3.png",
+    "borderRadius": "10px"
   }
 ]

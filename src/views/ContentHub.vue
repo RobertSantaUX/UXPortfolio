@@ -8,7 +8,7 @@
   >
     <div class="row">
       <div class="col-2 d-none d-lg-block sidenav-grey"></div>
-      <div id="disclaimer" class="col-12 col-lg-10 page-content-bg">
+      <div id="dcl" class="col-12 col-lg-10 page-content-bg">
         Disclaimer: this project is not a real project that I worked on for a
         company or client. This is a sample project that I did as if it was a
         real one.
@@ -31,7 +31,7 @@
           <a class="nav-link not-link" href="#high-fi_design">High-fi design</a>
           <a class="nav-link not-link" href="#prototype">Final prototype</a>
           <span style="flex: 1"></span>
-          <a id="to-the-top" class="not-link" href="#disclaimer">To the top</a>
+          <a id="to-the-top" class="not-link" href="#dcl">To the top</a>
         </div>
       </nav>
       <main class="col-12 col-lg-10 page-content-bg">
@@ -449,7 +449,7 @@ export default {
 </script>
 
 <style scoped>
-#disclaimer {
+#dcl {
   font-size: 40px;
   line-height: 49px;
   color: red;

@@ -14,13 +14,16 @@
       <div id="navbarToggler" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <router-link class="btn btn-nav" to="/projects" exact>Projects</router-link>
+            <router-link data-toggle="collapse" data-target=".navbar-collapse.show"
+                         class="btn btn-nav" to="/projects" exact>Projects</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="btn btn-nav" to="/introduction" exact>Introduction</router-link>
+            <router-link data-toggle="collapse" data-target=".navbar-collapse.show"
+                         class="btn btn-nav" to="/introduction" exact>Introduction</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="btn btn-nav" to="/contact" exact>Contact</router-link>
+            <router-link data-toggle="collapse" data-target=".navbar-collapse.show"
+                         class="btn btn-nav" to="/contact" exact>Contact</router-link>
           </li>
         </ul>
       </div>
