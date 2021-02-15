@@ -1,10 +1,11 @@
 <template>
   <main class="d-flex flex-column align-items-center">
     <p class="paragraph-1">
-      Hi, I am <b class="hl-color-purple">Róbert Sánta</b>, an aspiring UX Designer, currently based in Hungary.
+      Hi, I am <b class="hl-color-purple">Róbert Sánta</b>, an aspiring UX/UI Designer, currently based in Hungary.
     </p>
     <p class="paragraph-2">
-      This is my page to showcase my work and to introduce myself.<br> Feel free to look around!
+      I absolutely love getting lost in the details like small animations and effects when it comes to UI Design,
+      while making sure that everything is made for the users.
     </p>
     <div class="d-flex flex-row justify-content-center align-items-end">
       <router-link to="/introduction" class="m-4 card card-about border-rounded d-flex flex-column justify-content-end">

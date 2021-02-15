@@ -1,18 +1,14 @@
 <template>
   <div
       class="container-fluid"
-      data-offset="50"
+      data-offset="20"
       data-spy="scroll"
       data-target="#sidenav"
       style="position: relative; overflow-y: scroll"
   >
     <div class="row">
       <div class="col-2 d-none d-lg-block sidenav-grey"></div>
-      <div id="dcl" class="col-12 col-lg-10 page-content-bg">
-        Disclaimer: this project is not a real project that I worked on for a
-        company or client. This is a sample project that I did as if it was a
-        real one.
-      </div>
+      <div class="col-12 col-lg-10 page-content-bg pt-5"></div>
     </div>
     <div class="row">
       <nav
@@ -34,7 +30,12 @@
           <a id="to-the-top" class="not-link" href="#dcl">To the top</a>
         </div>
       </nav>
-      <main class="col-12 col-lg-10 page-content-bg">
+      <main class="col-12 col-lg-10 p-0">
+        <section id="dcl">
+          Disclaimer: this project is not a real project that I worked on for a
+          company or client. This is a sample project that I did as if it was a
+          real one.
+        </section>
         <section id="summary">
           <h1>Summary</h1>
           <div class="d-flex flex-column flex-sm-row">
@@ -127,7 +128,7 @@
           <img
               alt="Prerequisites lines"
               src="@/assets/images/lines/prerequisites_lines.svg"
-              class="d-none d-lg-block"
+              class="d-none d-lg-block pb-1"
               style="height: 18vh; width: 100%"
           />
         </section>
@@ -135,7 +136,7 @@
           <h1>Ideation</h1>
           <section id="personas" class="text-left">
             <h2 class="mt-4 mb-4 hl-color-purple">User personas:</h2>
-            <persona v-for="(persona, i) in personas" :key="persona" :index="i+1" :data="persona"/>
+            <persona v-for="(persona, i) in personas" :key="i" :index="i+1" :data="persona"/>
           </section>
           <section id="requirements" class="text-left">
             <h2 class="mt-4 mb-4 hl-color-purple">
@@ -177,30 +178,15 @@
                 src="@/assets/images/user_journey.png"
             />
           </section>
-          <div class="d-flex flex-column flex-lg-row mt-5 mb-5 mb-lg-0">
-            <div style="flex: 1">
-                <span class="section-summary-tag" style="width: 50%">
-                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark">
-                  <span>Personas</span>
-                </span>
-            </div>
-            <div class="mt-4 mt-lg-0 mb-4 mb-lg-0" style="flex: 1">
-                <span class="section-summary-tag" style="width: 50%">
-                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark">
-                  <span>Features</span>
-                </span>
-            </div>
-            <div style="flex: 1">
-                <span class="section-summary-tag" style="width: 50%">
-                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark">
-                  <span>User journey</span>
-                </span>
-            </div>
+          <div class="d-flex flex-column flex-lg-row mb-5 mb-lg-0" style="margin-top: 3em">
+            <section-tag title="Personas" style="flex: 1"/>
+            <section-tag title="Features" class="mt-4 mt-lg-0 mb-4 mb-lg-0" style="flex: 1"/>
+            <section-tag title="User journey" style="flex: 1"/>
           </div>
           <img
               alt="User journey lines"
               src="@/assets/images/lines/user_journey_lines.svg"
-              class="d-none d-lg-block"
+              class="d-none d-lg-block pb-1"
               style="height: 15vh; width: 100%"
           />
         </section>
@@ -279,7 +265,7 @@
               if you'd like to, you can check why these design ended up reworked
               or scratched completely, using the buttons next to them.
             </p>
-            <div class="container-fluid" style="font-size: 24px; line-height: 27px; margin-bottom: 1rem">
+            <div id="unused-designs" class="container-fluid">
               <div class="row">
                 <div class="col-12 col-lg-3 text-center">
                   <img alt="Unused design 1" src="@/assets/images/unused_design1.jpg" class="w-100">
@@ -363,23 +349,13 @@
             </p>
           </section>
           <div class="d-flex flex-column flex-lg-row mt-5 mb-5 mb-lg-0">
-            <div class="mb-4 mb-lg-0" style="flex: 1">
-                <span class="section-summary-tag" style="width: 50%">
-                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark">
-                  <span>Low-fidelity design</span>
-                </span>
-            </div>
-            <div style="flex: 1">
-                <span class="section-summary-tag" style="width: 50%">
-                  <img alt="" src="@/assets/images/checkmark.svg" class="checkmark">
-                  <span>High-fidelity design</span>
-                </span>
-            </div>
+            <section-tag title="Low-fidelity design" class="mb-4 mb-lg-0" style="flex: 1"/>
+            <section-tag title="High-fidelity design" style="flex: 1"/>
           </div>
           <img
               alt="Design lines"
               src="@/assets/images/lines/design_lines.svg"
-              class="d-none d-lg-block"
+              class="d-none d-lg-block pb-1"
               style="height: 15vh; width: 100%"
           />
         </section>
@@ -410,10 +386,11 @@
 import personas from "@/assets/data/personas.json";
 import CloseableButton from "@/components/CloseableButton";
 import Persona from "@/components/Persona";
+import SectionTag from "@/components/SectionTag";
 
 export default {
   name: "ContentHub",
-  components: {Persona, CloseableButton},
+  components: {SectionTag, Persona, CloseableButton},
   data: function () {
     return {
       personas,
@@ -466,6 +443,7 @@ export default {
 }
 
 main > section {
+  padding-left: 1em;
   padding-right: 3vw;
 }
 
@@ -476,12 +454,22 @@ main > section {
 #summary-img-showcase img {
   width: 10vw;
   margin: 0.5rem;
-  box-shadow: 0 5px 10px #00000073;
+}
+
+#dcl,
+#summary,
+#design,
+.page-content-bg {
+  background-color: #6e00a105;
 }
 
 #prerequisites,
 #prototype {
   background-color: #2a2a2a0a;
+}
+
+#ideation {
+  background-color: #FFFFFF59;
 }
 
 #prerequisites .content {
@@ -523,23 +511,29 @@ main > section {
 }
 
 #user-journey-table {
-  box-shadow: 0 5px 10px #00000073;
   border-radius: 15px;
-}
-
-#design {
-  background-color: #6e00a105;
 }
 
 #wireframes img {
   height: 100%;
   width: 100%;
+}
+
+#unused-designs {
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 1rem;
+}
+
+#user-journey-table,
+#summary-img-showcase img,
+#wireframes img,
+#unused-designs img {
   box-shadow: 0 5px 10px #00000073;
 }
 
 #figmaPrototype {
   border: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 h1 {
@@ -552,22 +546,6 @@ h1 {
 
 h2 {
   font-weight: bold;
-}
-
-img.checkmark {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  left: 10px;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-}
-
-img.checkmark + span {
-  margin-left: 35px;
-  margin-right: 35px
 }
 
 .border-right-custom {
@@ -607,43 +585,7 @@ img.checkmark + span {
   background-color: #e6e6e6;
 }
 
-.page-content-bg {
-  background-color: #6e00a105;
-}
-
-.show-hide-button {
-  font-size: 24px;
-  line-height: 35px;
-  background-color: #4B006E;
-  color: #E6E6E6;
-  box-shadow: 0 0 7px #00000091;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  outline: 0;
-  padding: 0.3em;
-  margin: 0.5em 0;
-  transition: background-color 200ms ease-in 0ms, border 200ms ease-in 0ms;
-}
-
-.show-hide-button:hover {
-  background-color: #2A2A2A;
-  border: 1px solid #FFFFFF;
-  transition: background-color 200ms ease-out 0ms, border 200ms ease-out 0ms;
-}
-
 .ud-desc {
   transition: opacity 100ms linear 0ms, visibility 100ms linear 0ms;
-}
-
-.section-summary-tag {
-  display: inline-block;
-  position: relative;
-  min-width: max-content;
-  font-size: 32px;
-  line-height: 37px;
-  background-color: white;
-  border: 1px solid #4b006e;
-  border-radius: 7px;
-  padding: 0.1em;
 }
 </style>

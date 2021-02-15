@@ -1,7 +1,10 @@
 <template>
   <div id="app" class="d-flex flex-column">
     <nav id="nav" class="navbar navbar-dark navbar-expand-lg sticky-top element-dark hidden-xs hidden-sm">
-      <router-link class="navbar-brand btn btn-nav" style="font-size:32px;line-height:39px;" to="/">Róbert Sánta</router-link>
+      <router-link class="navbar-brand" style="font-size:32px;line-height:39px;" to="/">
+        <span class="d-none d-lg-inline-block btn btn-nav">Róbert Sánta</span>
+        <home-icon class="d-inline-block d-lg-none" :size="35"/>
+      </router-link>
       <button class="navbar-toggler"
               type="button"
               data-toggle="collapse"

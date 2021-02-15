@@ -11,8 +11,8 @@
     font-size: 30px;
     line-height: 37px;
     color: #E6E6E6;
-    padding: 0.2em 1em 0.2em 1em;
-    margin: 0 0.5em 0 0.5em;
+    padding: 0.2em 1em;
+    margin: 0 0.5em;
 }
 
 .btn.btn-nav:not(.router-link-exact-active):hover {
