@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="col-sm-1 card-button-open"></div>
-      <div class="col-sm-5 card-body d-flex flex-column">
+      <div class="col-sm-8 card-body d-flex flex-column">
         <div>
           <div class="d-flex flex-row justify-content-start">
             <section>
@@ -66,13 +66,14 @@ export default {
   margin-bottom: 25px;
 
   /* top left, top right, bottom right, bottom left */
-  clip-path: polygon(0% 0%, 400px 0%, 400px 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 412px 0%, 412px 100%, 0% 100%);
   transition-duration: 0.5s;
 }
 
 .card-body {
   opacity: 0;
   transition-duration: 0.5s;
+  justify-content: center;
 }
 
 .card:hover {
@@ -94,21 +95,6 @@ export default {
   max-width: 15px;
   
   background-color:black;
-  background-image: 
-    repeating-linear-gradient(
-      45deg,
-      rgba(0, 0, 0, 0.8),
-      rgba(122, 11, 126, 0.8) 25px,
-      transparent 50px,
-      transparent 50px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      rgba(0, 0, 0, 0.8),
-      rgba(122, 11, 126, 0.8) 25px,
-      transparent 50px,
-      transparent 50px
-    );
 
   backface-visibility: visible !important;
   transition-duration: 0.5s;
@@ -130,6 +116,7 @@ export default {
 
 .card-header-text {
   margin: auto;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -140,6 +127,8 @@ img {
   max-height: 500px;
 
   margin: auto;
+
+  border-radius: 10px;
 }
 
 .card-header {
